@@ -1,0 +1,13 @@
+<html>
+<body>
+<h1>Greeter</h1>
+{% if name %}
+    <strong>Hello, {{ name }}!</strong>
+{% endif %}
+<form method="POST" action="">
+    {% csrf_token %}
+    <input type="text" name="name" placeholder="What's your name?" autofocus>
+    <input type="submit" value="Greet!">
+</form>
+</body>
+</html>
